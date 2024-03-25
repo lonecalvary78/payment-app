@@ -1,0 +1,14 @@
+quarkus:
+  application:
+    name: Payment Limit service
+  banner:
+    enabled: false
+  http:
+    port: 8484
+  log:
+    level: INFO
+  smallrye-openapi:
+    enable: true
+    info-title: Bank Limit API
+    info-version: 1.0.0
+    info-contact-name: loencalvary78

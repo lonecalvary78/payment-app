@@ -1,0 +1,5 @@
+quarkus:
+  banner:
+    enabled: false
+  http:
+    port: 8383

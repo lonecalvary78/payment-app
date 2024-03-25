@@ -1,0 +1,5 @@
+paymentModes:
+  - code: INTERNAL_TRANSFER
+    description: Internal Transfer
+  - code: INTERBANK_TRANSFER
+    description: Interbank Transfer

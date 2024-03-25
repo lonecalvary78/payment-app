@@ -1,0 +1,7 @@
+bankLimits:
+  - productCode: INTERNAL_TRANSFER
+    currencyCode: IDR
+    maximumLimit: 2000000
+  - productCode: INTERBANK_TRANSFER
+    currencyCode: IDR
+    maximumLimit: 2000000

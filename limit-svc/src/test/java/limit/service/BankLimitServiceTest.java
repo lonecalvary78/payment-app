@@ -1,6 +1,5 @@
 package limit.service;
 
-import limit.base.BaseTest;
 import limit.exception.BankLimitNotFoundException;
 import limit.model.BankLimitDTO;
 import limit.repository.BankLimitRepository;
@@ -12,6 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import payment.test.CommonPaymentTest;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-public class BankLimitServiceTest extends BaseTest {
+public class BankLimitServiceTest extends CommonPaymentTest {
     @InjectMocks
     private BankLimitService bankLimitService;
 

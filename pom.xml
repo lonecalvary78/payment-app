@@ -12,6 +12,7 @@
         <module>payment-mode-svc</module>
         <module>limit-svc</module>
         <module>payment-svc</module>
+        <module>common-test</module>
     </modules>
 
     <developers>

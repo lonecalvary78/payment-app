@@ -1,6 +1,5 @@
 package limit.repository;
 
-import limit.base.BaseTest;
 import limit.exception.BankLimitNotFoundException;
 import limit.helper.BankLimitLoader;
 import limit.model.BankLimitDTO;
@@ -13,6 +12,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.junit.jupiter.MockitoExtension;
+import payment.test.CommonPaymentTest;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -21,7 +21,7 @@ import java.util.stream.Stream;
 
 @ExtendWith(MockitoExtension.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class BankLimitRepositoryTest extends BaseTest {
+public class BankLimitRepositoryTest extends CommonPaymentTest {
     private BankLimitRepository bankLimitRepository;
 
     private BankLimitSet bankLimitSet;

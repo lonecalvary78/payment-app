@@ -1,16 +1,14 @@
-package limit.base;
-
-import org.apache.commons.lang3.ObjectUtils;
+package payment.test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
 
-public abstract class BaseTest {
+public abstract class CommonPaymentTest {
     protected static Stream<Map<String, Object>> constructNewTestParameters(String[] parameterNames, Object[][] parameterValues) {
         var testParams = new ArrayList<Map<String, Object>>();
-        if(ObjectUtils.isNotEmpty(parameterValues)) {
+        if(parameterValues != null && parameterValues.length>0) {
             for (int rowCounter=0;rowCounter<parameterValues.length;rowCounter++) {
                 var parameterValue = parameterValues[rowCounter];
                 if (parameterValue.length == parameterNames.length) {
